@@ -71,26 +71,26 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\dev\LearnOpenGL\includes\GLAD;C:\dev\LearnOpenGL\includes\GLFW;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\dev\LearnOpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)includes\GLAD;$(ProjectDir)includes\GLFW;$(ProjectDir)includes\Shaders;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Platform) $(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediate\$(Platform) $(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\dev\LearnOpenGL\includes\GLAD;C:\dev\LearnOpenGL\includes\GLFW;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\dev\LearnOpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)includes\GLAD;$(ProjectDir)includes\GLFW;$(ProjectDir)includes\Shaders;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Platform) $(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediate\$(Platform) $(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\dev\LearnOpenGL\includes\GLAD;C:\dev\LearnOpenGL\includes\GLFW;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\dev\LearnOpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)includes\GLAD;$(ProjectDir)includes\GLFW;$(ProjectDir)includes\Shaders;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Platform) $(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediate\$(Platform) $(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\dev\LearnOpenGL\includes\GLAD;C:\dev\LearnOpenGL\includes\GLFW;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\dev\LearnOpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)includes\GLAD;$(ProjectDir)includes\GLFW;$(ProjectDir)includes\Shaders;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)lib;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin\$(Platform) $(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediate\$(Platform) $(Configuration)\</IntDir>
   </PropertyGroup>
@@ -157,6 +157,14 @@
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\Shaders\Shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\shader.frag" />
+    <None Include="res\shader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
