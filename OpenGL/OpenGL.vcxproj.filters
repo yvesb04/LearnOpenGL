@@ -19,9 +19,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="includes\Shaders\Shader.h" />
+    <ClInclude Include="src\stb_image.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\shader.frag" />
     <None Include="res\shader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\container.jpg" />
+    <Image Include="res\awesomeface.png" />
   </ItemGroup>
 </Project>
